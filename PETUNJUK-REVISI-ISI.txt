@@ -1,0 +1,16 @@
+CHEM-BOND — REVISI BERDASARKAN CATATAN DI PDF
+
+Revisi yang diterapkan:
+1. Slide 3: pertanyaan pemantik dikaitkan dengan kehidupan sehari-hari, amonia, pertanian, dan pembentukan ion amonium.
+2. Slide 4: penjelasan konfigurasi kulit nitrogen dan hidrogen diperjelas, termasuk jumlah elektron valensi.
+3. Slide 6: ditambahkan dua visualisasi ringkas, yaitu ikatan kovalen pada NH3 (N dengan 3 H) dan ikatan kovalen koordinasi pada NH4+ (N dengan 4 H).
+4. Slide 7 yang berisi video/contoh kehidupan dihapus sesuai catatan pada PDF. Navigasi disusun ulang sehingga media memiliki 8 slide.
+5. Latihan esai disesuaikan agar pertanyaan ketiga memeriksa konfigurasi kulit dan elektron valensi nitrogen serta hidrogen.
+
+Bagian lain, termasuk tampilan umum, warna, dan struktur utama CHEM-BOND, dipertahankan sebisa mungkin. Skor esai tetap berupa perkiraan berbasis kata kunci, bukan penilaian semantik sempurna.
+
+Cara menjalankan:
+- Ekstrak ZIP.
+- Buka folder CHEM-BOND-GITHUB-VIDEO-FIX di VS Code.
+- Buka index.html dengan ekstensi Live Server.
+- Untuk GitHub Pages, unggah isi folder ke repositori dan aktifkan GitHub Pages.

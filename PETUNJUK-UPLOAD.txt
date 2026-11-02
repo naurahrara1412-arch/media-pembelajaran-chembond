@@ -1,0 +1,17 @@
+PETUNJUK UPLOAD CHEM-BOND AGAR VIDEO MUNCUL DI GITHUB PAGES
+
+1. Ekstrak ZIP ini di laptop.
+2. Buka repositori GitHub: MEDIA-PEMBELAJARAN-KIMIA-IKATAN-KOVALEN-KOORDINASI.
+3. Unggah file-file pada folder hasil ekstrak ke ROOT repositori (jangan mengunggah folder luarnya):
+   - index.html
+   - style.css
+   - script.js
+   - haber-process.mp4
+   - subtitle-indonesia.vtt
+   - README.md (opsional)
+4. Pastikan haber-process.mp4 dan subtitle-indonesia.vtt berada sejajar dengan index.html di GitHub.
+5. Commit changes ke branch/folder yang digunakan GitHub Pages.
+6. Tunggu deployment selesai, lalu buka website dan tekan Ctrl+F5.
+
+PENTING: Jangan hanya mengunggah index.html. Video dan subtitle harus ikut diunggah.
+Nama file harus persis haber-process.mp4 dan subtitle-indonesia.vtt.

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CHEM-BOND — Ikatan Kovalen Koordinasi</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Nunito:wght@700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><span class="atom">⚛</span><div><strong>CHEM-BOND</strong><small>Media Pembelajaran Kimia</small></div></div>
+  <div class="progress-wrap"><span id="progressText">Progres belajar 0%</span><div class="progress"><i id="progressBar"></i></div></div>
+  <nav><a href="#beranda">Beranda</a><a href="#peta">Peta</a><a href="#biodata">Biodata</a><a href="#konsep">Pemantik</a><a href="#konsep-lanjutan">Konsep</a><a href="#audio-visual">Audio</a><a href="#simulasi">Simulasi</a><a href="#latihan">Latihan</a><a href="#ringkasan">Ringkasan</a></nav>
+</header>
+
+<main>
+<!-- SLIDE 1 -->
+<section id="beranda" class="story-slide hero-slide">
+ <div class="story-grid s1">
+  <div class="box b2"><span class="eyebrow">MEDIA PEMBELAJARAN KIMIA • INTERAKTIF</span></div>
+  <div class="box b6"><div class="brand-large"><span class="atom big">⚛</span><b>CHEM-BOND</b><small>Media Pembelajaran Kimia</small></div></div>
+  <div class="box b5"><p><strong class="hero-topic">Ikatan Kovalen Koordinasi</strong><span class="hero-description">Pelajari bagaimana pasangan elektron digunakan bersama melalui donor dan akseptor secara bertahap.</span></p></div>
+  <div class="box b7"><span>Konsep dasar</span><span>Visualisasi elektron</span><span>Simulasi bertahap</span><span>Latihan esai</span></div>
+  <div class="box b8"><p>Mulai dari ide sederhana, lihat asal pasangan elektron, lalu ikuti pembentukan NH₄⁺.</p></div>
+  <div class="box b12 atom-card"><div class="electron-orbit"><span>••</span><b>N</b></div><p>Pasangan elektron bebas pada N</p></div>
+ </div>
+<div class="slide-step"><span>Beranda • Mulai dari sini</span><span></span><button class="next-step" onclick="goStep(2)">Lanjut ke Peta →</button></div>
+</section>
+
+<!-- SLIDE 2 -->
+<section id="peta" class="story-slide white-slide">
+ <div class="story-grid s2">
+  <div class="box b2"><span class="section-no">01</span><h2>Peta Pembelajaran</h2></div>
+  <div class="box b3"><h3>Cara Menggunakan</h3><ol><li>Ikuti halaman secara berurutan dengan tombol <b>Lanjut</b>.</li><li>Gunakan tombol <b>Kembali</b> untuk membuka halaman sebelumnya.</li><li>Jawab pertanyaan pemantik dengan bahasamu sendiri.</li><li>Ikuti simulasi, lalu kerjakan latihan esai.</li></ol><p>Halaman berikutnya akan terbuka bertahap agar kegiatan belajar dilakukan berurutan.</p></div>
+  <div class="box b4"><h3>Capaian Pembelajaran</h3><p>Siswa dapat memahami ikatan kovalen koordinasi serta mengidentifikasi donor, akseptor, dan asal pasangan elektron.</p></div>
+  <div class="box b5"><h3>Tujuan Pembelajaran</h3><ol><li>Menjelaskan ikatan kovalen dan ikatan kovalen koordinasi.</li><li>Menentukan donor dan akseptor pasangan elektron.</li><li>Menentukan elektron valensi melalui konfigurasi kulit.</li><li>Menjelaskan pembentukan ion amonium secara sederhana.</li></ol></div>
+ </div>
+ <div class="slide-step"><button class="back-step" onclick="goStep(1)">← Kembali</button><span>Langkah 2 dari 9</span><button class="next-step" onclick="goStep(3)">Lanjut ke Biodata →</button></div>
+</section>
+
+<!-- SLIDE 3: BIODATA SISWA -->
+<section id="biodata" class="story-slide white-slide">
+ <div class="story-grid s2">
+  <div class="box b2"><span class="section-no">02</span><h2>Biodata Siswa</h2><p>Isi biodata terlebih dahulu sebelum memulai pengamatan sederhana.</p></div>
+  <div class="box b3 student-form-box">
+   <form id="studentBioForm" onsubmit="saveStudentBio(event)">
+    <label for="studentName">Nama lengkap</label><input id="studentName" name="studentName" type="text" autocomplete="name" placeholder="Masukkan nama lengkap" required>
+    <label for="studentEmail">Email</label><input id="studentEmail" name="studentEmail" type="email" autocomplete="email" placeholder="nama@email.com" required>
+    <label for="studentSchool">Nama SMA</label><input id="studentSchool" name="studentSchool" type="text" autocomplete="organization" placeholder="Masukkan nama SMA" required>
+    <p id="bioStatus" class="muted" aria-live="polite">Biodata digunakan untuk mengisi identitas selama kegiatan belajar pada perangkat ini.</p>
+    <button type="submit">Simpan Biodata & Lanjut →</button>
+   </form>
+  </div>
+ </div>
+ <div class="slide-step"><button class="back-step" onclick="goStep(2)">← Kembali</button><span>Langkah 3 dari 9</span><button class="next-step" onclick="submitStudentBio()">Lanjut ke Pengamatan →</button></div>
+</section>
+
+<!-- SLIDE 4 -->
+<section id="konsep" class="story-slide dark-slide">
+ <div class="story-grid s3">
+  <div class="box b2"><span class="section-no">02 • PEMANTIK</span><h2>Amonia dalam Kehidupan Sehari-hari</h2></div>
+  <div class="box b3"><p>Amonia (NH₃) digunakan sebagai bahan baku pembuatan pupuk yang membantu tanaman memperoleh nitrogen. Perhatikan kaitan pasangan elektron pada amonia dengan pembentukan ion amonium, lalu jawab pertanyaan berikut.</p></div>
+  <div class="box b5 prompt-questions">
+   <article class="prompt-card"><label for="prompt1">1. Mengapa amonia (NH₃) penting dalam kehidupan sehari-hari, khususnya dalam bidang pertanian?</label><textarea id="prompt1" placeholder="Tulis jawaban singkatmu..."></textarea><button onclick="revealPrompt(1)">Periksa penjelasan</button><p id="feedback1" class="prompt-feedback" hidden>Amonia digunakan sebagai bahan baku pembuatan pupuk nitrogen yang membantu pertumbuhan tanaman.</p></article>
+   <article class="prompt-card"><label for="prompt2">2. Bagaimana pasangan elektron bebas pada nitrogen dalam NH₃ berperan ketika amonia bertemu ion H⁺?</label><textarea id="prompt2" placeholder="Tulis dugaanmu..."></textarea><button onclick="revealPrompt(2)">Periksa penjelasan</button><p id="feedback2" class="prompt-feedback" hidden>Pasangan elektron bebas pada atom N dapat digunakan bersama ion H⁺ sehingga terbentuk ion amonium (NH₄⁺).</p></article>
+   <article class="prompt-card"><label for="prompt3">3. Apa hubungan pembentukan NH₄⁺ dengan konsep ikatan kovalen koordinasi?</label><textarea id="prompt3" placeholder="Tulis dugaanmu..."></textarea><button onclick="revealPrompt(3)">Periksa penjelasan</button><p id="feedback3" class="prompt-feedback" hidden>Pada pembentukan NH₄⁺, kedua elektron dalam ikatan koordinasi berasal dari pasangan elektron bebas atom nitrogen pada NH₃.</p></article>
+  </div>
+  <div class="box b6"><h3>Prolog</h3><p>Amonia berkaitan dengan kebutuhan pupuk dalam pertanian. Pada tingkat partikel, pasangan elektron bebas pada nitrogen dapat didonasikan kepada H⁺ untuk membentuk NH₄⁺.</p></div>
+ </div>
+ <div class="slide-step"><button class="back-step" onclick="goStep(3)">← Kembali</button><span>Langkah 4 dari 9</span><button class="next-step" onclick="continueFromPrompts()">Lanjut ke Konsep →</button></div>
+</section>
+
+<!-- SLIDE 4 -->
+<section id="konsep-lanjutan" class="story-slide dark-slide">
+ <div class="story-grid s4">
+  <div class="box b1"><span class="section-no">03 • KONSEP DASAR</span></div>
+  <div class="box b2"><h2>Ikatan Kovalen Koordinasi</h2></div>
+  <div class="box b3 note"><strong>Pengertian</strong><p>Ikatan kovalen koordinasi adalah ikatan kimia yang terbentuk ketika pasangan elektron yang digunakan bersama hanya berasal dari satu atom. Atom yang menyumbangkan pasangan elektron disebut <b>donor</b>, sedangkan atom atau ion yang menerimanya disebut <b>akseptor</b>. Ikatan ini dapat digambarkan dengan tanda panah dari donor menuju akseptor.</p></div>
+  <div class="box b4"><h3>Bagaimana menentukan elektron valensi?</h3><p>Elektron valensi adalah elektron yang berada pada kulit terluar atom. Untuk contoh nitrogen, nomor atomnya 7, sehingga atom netral memiliki 7 elektron. Jika disusun ke kulit, 2 elektron mengisi kulit K dan 5 elektron berada pada kulit L. Jadi, nitrogen memiliki 5 elektron valensi.</p></div>
+  <div class="box b5"><h3>Konfigurasi kulit nitrogen (N)</h3><div class="formula">K = 2 • L = 5</div><p>Nomor atom nitrogen adalah 7, sehingga konfigurasi kulit atom netralnya K = 2 dan L = 5. Artinya, nitrogen memiliki 5 elektron valensi. Pada NH₃, nitrogen membentuk tiga ikatan N–H dan masih memiliki satu pasangan elektron bebas.</p></div>
+  <div class="box b6"><h3>Konfigurasi kulit hidrogen (H)</h3><div class="formula">K = 1</div><p>Nomor atom hidrogen adalah 1, sehingga satu-satunya elektronnya menempati kulit K. Hidrogen memiliki 1 elektron valensi dan dapat berbagi satu elektron untuk membentuk ikatan kovalen dengan nitrogen.</p></div>
+  <div class="box b7"><p>Ketika NH₃ bertemu H⁺, pasangan elektron bebas dari N dapat digunakan bersama dengan H⁺ sehingga terbentuk NH₄⁺. Pasangan elektron pembentuk ikatan ini semula berasal dari nitrogen.</p></div>
+ </div>
+ <div class="slide-step"><button class="back-step" onclick="goStep(4)">← Kembali</button><span>Langkah 5 dari 9</span><button class="next-step" onclick="goStep(6)">Lanjut ke Audio →</button></div>
+</section>
+
+<!-- SLIDE 5 -->
+<section id="audio-visual" class="story-slide white-slide">
+ <div class="story-grid s5">
+  <div class="box b1"><h2>Dengarkan Kesimpulan Konsep Dasar</h2></div>
+  <div class="box b2"><p>Dengarkan ringkasan tentang ikatan kovalen koordinasi, donor–akseptor, dan elektron valensi sebelum mengikuti simulasi.</p></div>
+  <div class="box b3"><button onclick="speak('Ikatan kovalen adalah ikatan ketika dua atom menggunakan pasangan elektron bersama. Pada ikatan kovalen koordinasi, kedua elektron dalam pasangan ikatan berasal dari satu atom donor dan digunakan bersama dengan atom atau ion akseptor. Arah panah menunjukkan asal pasangan elektron. Elektron valensi adalah elektron pada kulit terluar. Nitrogen memiliki konfigurasi kulit K dua dan L lima, sehingga memiliki lima elektron valensi.')">▶ Putar penjelasan audio</button></div>
+ </div>
+ <div class="slide-step"><button class="back-step" onclick="goStep(5)">← Kembali</button><span>Langkah 6 dari 9</span><button class="next-step" onclick="goStep(7)">Mulai Simulasi →</button></div>
+</section>
+
+<!-- SLIDE 6 -->
+<section id="simulasi" class="story-slide dark-slide">
+ <div class="story-grid s6">
+  <div class="box b1"><span class="section-no">03 • SIMULASI VISUAL</span></div>
+  <div class="box b2"><h2>Dari Elektron Valensi → Ikatan</h2></div>
+  <div class="box b3"><p>Ikuti simulasi secara berurutan. Pertama, amati tahapan pembentukan amonia (NH₃) dari nitrogen dan tiga atom hidrogen. Setelah NH₃ terbentuk, lanjutkan untuk melihat bagaimana pasangan elektron bebas nitrogen membentuk ikatan kovalen koordinasi dengan H⁺ sehingga menghasilkan NH₄⁺. Audio akan menjelaskan setiap tahap secara otomatis saat kamu berpindah tahap.</p></div>
+  <div class="box b8 simulation-mode"><h3>Bagian 1 — Pembentukan amonia (NH₃)</h3><p>Nitrogen membentuk tiga ikatan kovalen tunggal dengan tiga atom hidrogen. Satu pasangan elektron bebas tetap berada pada atom N.</p><div class="formula">H—N(••)—H<br>&nbsp;&nbsp;&nbsp;|<br>&nbsp;&nbsp;&nbsp;H</div><p class="muted">Tiga ikatan N–H; nitrogen masih memiliki satu pasangan elektron bebas.</p></div>
+  <div class="box b10 simulation-mode"><h3>Bagian 2 — Pembentukan ion amonium (NH₄⁺)</h3><p>Pasangan elektron bebas dari N didonasikan kepada H⁺. Setelah ikatan terbentuk, nitrogen dikelilingi oleh empat atom hidrogen.</p><div class="formula">[NH₄]⁺<br>H di sekitar N: 4</div><p class="muted">NH₃ + H⁺ → NH₄⁺ • pasangan elektron pembentuk ikatan berasal dari N.</p></div>
+  <div class="box b4"><strong id="stageLabel">Tahap 1/6</strong></div>
+  <div class="box b5 simulation">
+      <div class="sim-scene" id="simScene"></div>
+      <div class="sim-caption"><strong id="stageTitle">Konfigurasi N</strong><p id="stageText">Konfigurasi elektron N: 1s² 2s² 2p³. Lima elektron valensi berarti N memiliki satu pasangan elektron bebas setelah membentuk tiga ikatan N–H pada NH₃.</p></div>
+    </div>
+  <div class="box b6 sim-actions"><button onclick="prevStage()">Sebelumnya</button><button onclick="nextStage()">Berikutnya + Audio</button><button class="secondary" onclick="startSimulation();setStage(0)">Mulai / Ulangi Simulasi</button></div>
+  <div class="box b7 stages" id="stages"></div>
+  <div class="box b9"><button onclick="speakSimulation()">🔊 Putar ulang audio tahap ini</button><p class="muted">Tekan “Mulai / Ulangi Simulasi” sekali untuk mengaktifkan audio otomatis. Setiap tahap berikutnya akan langsung dijelaskan.</p></div>
+ </div>
+<div class="slide-step"><button class="back-step" onclick="goStep(6)">← Kembali</button><span>Langkah 7 dari 9</span><button class="next-step" onclick="goStep(8)">Lanjut ke Latihan Esai →</button></div>
+</section>
+
+<!-- Bagian contoh video dihapus sesuai catatan revisi PDF. -->\n\n<!-- SLIDE 7 -->
+<section id="latihan" class="story-slide dark-slide">
+ <div class="story-grid s9">
+  <div class="box b1"><span class="section-no">05 • LATIHAN ESAI</span></div>
+  <div class="box b2"><h2>Cek Pemahamanmu</h2></div>
+  <div class="box b3"><p>Jawab tiga pertanyaan ini dengan bahasamu sendiri. Setelah menekan “Simpan dan periksa jawaban”, kamu akan melihat skor perkiraan dan contoh jawaban yang benar.</p></div>
+  <div class="box b4 essay-practice">
+   <article><label for="essay1">1. Apa yang dimaksud dengan ikatan kovalen koordinasi?</label><textarea id="essay1" placeholder="Tulis jawaban esaimu..."></textarea></article>
+   <article><label for="essay2">2. Saat NH₃ bertemu H⁺ membentuk NH₄⁺, mana yang menjadi donor dan mana yang menjadi akseptor?</label><textarea id="essay2" placeholder="Tulis jawaban esaimu..."></textarea></article>
+   <article><label for="essay3">3. Tuliskan konfigurasi kulit nitrogen dan hidrogen, lalu tentukan jumlah elektron valensi masing-masing.</label><textarea id="essay3" placeholder="Tulis jawaban esaimu..."></textarea></article>
+   <button onclick="saveEssays()">Simpan dan periksa jawaban</button><small id="essaySaved"></small><div id="essayResults" class="essay-results" aria-live="polite" hidden></div>
+  </div>
+ </div>
+ <div class="slide-step"><button class="back-step" onclick="goStep(7)">← Kembali</button><span>Langkah 8 dari 9</span><button class="next-step" onclick="goStep(9)">Lihat Ringkasan →</button></div>
+</section>
+
+<!-- SLIDE 8 -->
+<section id="ringkasan" class="story-slide dark-slide">
+ <div class="story-grid s11">
+  <div class="box b1"><span class="section-no">07 • RINGKASAN</span></div>
+  <div class="box b2"><h2>Ringkasan Pembelajaran</h2></div>
+  <div class="box b3 summary-cards"><article><b>Ikatan kovalen</b>: terbentuk saat dua atom menggunakan bersama pasangan elektron.</article><article><b>Ikatan kovalen koordinasi</b>: pasangan elektron yang digunakan bersama berasal dari satu atom saja.</article><article><b>Donor</b> menyumbangkan pasangan elektron; <b>akseptor</b> menerimanya.</article><article><b>Nitrogen</b>: konfigurasi kulit K = 2 dan L = 5, sehingga memiliki 5 elektron valensi dan satu pasangan elektron bebas pada NH₃.</article><article><b>Contoh</b>: NH₃ + H⁺ → NH₄⁺. Pasangan elektron bebas dari N digunakan bersama dengan H⁺.</article></div>
+  <div class="box b4"><h3>Kesalahan yang sering terjadi</h3><ul><li>Mengira panah menunjukkan arah perpindahan atom.</li><li>Mengira donor adalah penerima pasangan elektron.</li><li>Lupa bahwa pasangan elektron berasal dari donor.</li></ul></div>
+  <div class="box b5"><h3>Pertanyaan refleksi</h3><p>Kembali ke pertanyaan awal: dari mana pasangan elektron itu berasal?</p><textarea id="refleksi" placeholder="Tulis refleksimu..."></textarea></div>
+  <div class="box b6"><button onclick="saveReflection()">Simpan refleksi</button><span id="saved"></span></div>
+  <div class="box b7 footer-box"><span>CHEM-BOND • Ikatan Kovalen Koordinasi</span><button class="linkbtn" onclick="scrollTo({top:0,behavior:'smooth'})">↑ Kembali ke atas</button></div>
+ </div>
+<div class="slide-step"><button class="back-step" onclick="goStep(8)">← Kembali</button><span>Langkah 9 dari 9 • Selesai</span><button class="next-step" onclick="restartLearning()">Ulangi dari Awal ↺</button></div>
+</section>
+</main>
+<div class="source-note">Materi kimia dirancang untuk menekankan asal pasangan elektron: donor → akseptor. Contoh utama: NH₃ + H⁺ → NH₄⁺.</div>
+<script src="script.js"></script>
+</body>
+</html>
